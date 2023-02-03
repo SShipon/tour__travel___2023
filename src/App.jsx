@@ -5,7 +5,7 @@ const App = () => {
     <>
       <button className="btn btn-active btn-primary">Button</button>
       <button className="btn btn-active btn-secondary">Button</button>
-       <button className="btn btn-active btn-accent">Button</button>
+      <button className="btn btn-active btn-accent">Button</button>
     </>
   )
 }

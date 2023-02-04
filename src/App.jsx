@@ -1,12 +1,10 @@
-import React from 'react'
+import Navbar from "./components/shared/navbar/Navbar"
 
 const App = () => {
   return (
-    <>
-      <button className="btn btn-active btn-primary">Button</button>
-      <button className="btn btn-active btn-secondary">Button</button>
-      <button className="btn btn-active btn-accent">Button</button>
-    </>
+    <div>
+     <Navbar />
+    </div>
   )
 }
 

@@ -1,10 +1,11 @@
-import Navbar from "./components/shared/navbar/Navbar"
+import { RouterProvider } from "react-router-dom"
+import { router } from "./routes/Routers"
 
 const App = () => {
   return (
-    <div>
-     <Navbar />
-    </div>
+     <>
+       <RouterProvider router={router} />
+     </>
   )
 }
 

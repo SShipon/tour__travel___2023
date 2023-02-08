@@ -1,6 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 body {
   margin: 0;
@@ -12,6 +15,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
 }

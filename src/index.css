@@ -3,6 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* group utilities */
+.menu-item{
+  @apply menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52
+}
+.dropdown-pages{
+  @apply fill-current group-hover:rotate-180 transition-transform duration-700
+}
+.services-card{
+ @apply w-96 mt-10 bg-slate-900 hover:bg-[#dbaa54] shadow-2xl hover:-translate-y-4 duration-700
+}
+
 
 
 body {

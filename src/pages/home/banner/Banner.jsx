@@ -45,7 +45,7 @@ const Banner = () => {
 
   return (
       <section>
-        <div className='max-w-[1400px] h-[550px] w-full m-auto py-4  group'>
+        <div className='max-w-[1400px] h-[570px] w-full m-auto group'>
         <div
           style={{backgroundImage: `url(${bannerImg[currentIndex]})` }}
           className='w-full h-full bg-center bg-cover duration-1000'

@@ -1,8 +1,14 @@
 
-const ImgUi = ({img, alt}) => {
+
+const ImgUi = ({isHovered,img, alt}) => {
+
+
+
   return (
     <>
-       <figure><img className='rounded-[20px] border-[8px] border-white' src={img} alt={alt} /></figure>
+    <img className={`rounded-[14px] h-60 w-full border-[8px] border-white object-cover transition-all duration-300 ${
+    isHovered ? "scale-100 translate-x-3 skew-y-6" : "scale-100"
+  }`} src={img} alt={alt} />
     </>
   )
 }

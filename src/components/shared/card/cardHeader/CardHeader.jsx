@@ -1,9 +1,12 @@
-import React from 'react'
+
 
 const CardHeader = ({headerTitle, icon}) => {
   return (
     <>
-      <p className="font-semibold text-lg">{icon}{headerTitle}</p>
+      <p className="font-semibold">{icon}{headerTitle}</p>
+      <div>
+       
+    </div>
     </>
   )
 }

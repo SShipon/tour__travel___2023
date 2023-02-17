@@ -6,7 +6,7 @@ import { TextHeader } from "../../../components/UI/titleText/Text"
 
 const Services = () => {
 
-    const serviceItems =[
+    const serviceItems = [
         {
             id:1,
             img : service1,
@@ -43,8 +43,8 @@ const Services = () => {
      </div>
      <div className="grid grid-cols-3 justify-items-center">
         {
-             serviceItems.length > 0 ? (
-               serviceItems.map((serviceItem)=>(    
+             serviceItems?.length > 0 ? (
+               serviceItems?.map((serviceItem)=>(    
                 <ServicesCard serviceItem={serviceItem} />
                ))
              ) : "Our Service is Disable Right Now!!!"

@@ -6,7 +6,11 @@ module.exports = {
   
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundSize: {
+        "size-180": "180% 180%",
+      },
+    },
     
   },
   plugins: [require("daisyui")],

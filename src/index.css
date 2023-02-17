@@ -13,6 +13,10 @@
 .services-card{
  @apply w-96 mt-10 bg-slate-900 hover:bg-[#dbaa54] shadow-2xl hover:-translate-y-4 duration-700
 }
+.card-btn {
+  @apply m-2 px-4 py-2 text-white rounded-xl transition-all duration-500 to-white via-black from-red-500 bg-size-180 hover:bg-right-bottom cursor-pointer
+}
+
 
 
 

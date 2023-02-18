@@ -21,7 +21,7 @@ const Card = ({card}) => {
   };
 
   return (
-     <div className="card w-96 shadow-xl bg-[#e4e1dd] "onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+     <div className="w-96 shadow-xl rounded-xl bg-[#f0ece7] "onMouseEnter={handleHover} onMouseLeave={handleLeave}>
         <ImgUi img={img} isHovered={isHovered} alt="card Img"/>
         <div className="card-body">
           <div className='flex justify-between'>

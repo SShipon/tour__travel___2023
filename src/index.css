@@ -16,12 +16,17 @@
 .card-btn {
   @apply m-2 px-4 py-2 text-white rounded-xl transition-all duration-500 to-white via-black from-red-500 bg-size-180 hover:bg-right-bottom cursor-pointer
 }
-
+.arrow-btn{
+  @apply bg-[#fab1a0] h-[30px] w-[30px] rounded-full grid
+  place-items-center cursor-pointer
+}
 
 
 
 body {
   margin: 0;
+  padding:0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -33,3 +38,4 @@ code {
   font-family: Verdana, Geneva, Tahoma, sans-serif ,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
+

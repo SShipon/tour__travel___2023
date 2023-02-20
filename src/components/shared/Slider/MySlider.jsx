@@ -56,7 +56,7 @@ const MySlider = ({sliders}) => {
      
       <div className="relative w-4/5 items-center mt-20">
       <Slider {...settings}>
-      { sliders?.map((slider)=> <Card widths="w-80" key={slider.id} card={slider} />)}
+      { sliders?.map((slider)=> <Card heights="h-48"  widths="w-80" key={slider.id} card={slider} />)}
       </Slider> 
      </div>
     </div>

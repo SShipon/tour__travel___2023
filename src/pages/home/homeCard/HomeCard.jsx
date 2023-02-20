@@ -57,7 +57,7 @@ const HomeCard = () => {
         {
              cards?.length > 0 ? (
               cards?.map((card)=>(    
-                <Card widths="w-96" card={card} />
+                <Card widths="w-96" heights="h-60" card={card} />
                ))
              ) : "Our Service is Disable Right Now!!!"
         }

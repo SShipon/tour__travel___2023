@@ -7,7 +7,7 @@ import CardHeader from './cardHeader/CardHeader';
 import ImgUi from './imgUi/ImgUi';
 
 
-const Card = ({card, widths}) => {
+const Card = ({card, widths, heights}) => {
   const {img, title} = card || {} ;
   console.log(widths);
 
@@ -25,7 +25,7 @@ const Card = ({card, widths}) => {
 
   return (
      <div className={ `${widths} shadow-xl rounded-xl bg-[#f0ece7] `} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
-        <ImgUi img={img} isHovered={isHovered} alt="card Img"/>
+        <ImgUi heights={heights} img={img} isHovered={isHovered} alt="card Img"/>
         <div className="card-body">
           <div className='flex justify-between'>
             <CardHeader headerTitle="180/Per Person" icon="$"/>
@@ -44,7 +44,3 @@ const Card = ({card, widths}) => {
 };
 
 export default Card;
-
-/*
-  <div className="grid grid-cols-3 justify-items-center">
- */

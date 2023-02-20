@@ -19,7 +19,7 @@ const HomeSlider = () => {
         {   
             id: 2,
             img : img2,
-            title: "French , France",
+            title: "French , France France",
           
          },
         {
@@ -31,7 +31,7 @@ const HomeSlider = () => {
         {   
             id: 4,
             img : img4,
-            title: "French , France",
+            title: "French , France France",
           
          },
         {

@@ -7,8 +7,9 @@ import CardHeader from './cardHeader/CardHeader';
 import ImgUi from './imgUi/ImgUi';
 
 
-const Card = ({card}) => {
+const Card = ({card, widths}) => {
   const {img, title} = card || {} ;
+  console.log(widths);
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -20,8 +21,10 @@ const Card = ({card}) => {
     setIsHovered(false);
   };
 
+
+
   return (
-     <div className="w-96 shadow-xl rounded-xl bg-[#f0ece7] "onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+     <div className={ `${widths} shadow-xl rounded-xl bg-[#f0ece7] `} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
         <ImgUi img={img} isHovered={isHovered} alt="card Img"/>
         <div className="card-body">
           <div className='flex justify-between'>

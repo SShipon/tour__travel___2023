@@ -7,7 +7,7 @@ import PrevSlide from "./prevSlide/PrevSlide";
 let settings = {
   arrows: true,
   infinite: true,
-  speed: 600,
+  speed: 700,
   slidesToShow: 3,
   slidesToScroll: 1,
   nextArrow: <NextSlide />,
@@ -52,11 +52,14 @@ let settings = {
 const MySlider = ({sliders}) => {
 
   return ( 
-     <div className="relative items-center mt-20">
+    <div>
+     
+      <div className="relative w-4/5 items-center mt-20">
       <Slider {...settings}>
-      { sliders?.map((slider)=> <Card key={slider.id} card={slider} />)}
+      { sliders?.map((slider)=> <Card widths="w-80" key={slider.id} card={slider} />)}
       </Slider> 
      </div>
+    </div>
    
   )
 }

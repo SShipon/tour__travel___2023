@@ -1,7 +1,7 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
 
 /* group utilities */
 .menu-item{
@@ -20,6 +20,8 @@
   @apply bg-[#fab1a0] h-[30px] w-[30px] rounded-full grid
   place-items-center cursor-pointer
 }
+
+@tailwind utilities;
 
 
 

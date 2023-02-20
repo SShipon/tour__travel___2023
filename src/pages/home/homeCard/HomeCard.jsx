@@ -53,11 +53,11 @@ const HomeCard = () => {
       <TextHeader textHeader="Choose Your Package"/>
       <TextTitle textTitle={textTitle}/>
 
-      <div className="grid grid-cols-3 gap-y-8 mb-10 justify-items-center">
+      <div className="grid grid-cols-3 gap-y-6 mb-10 justify-items-center">
         {
              cards?.length > 0 ? (
               cards?.map((card)=>(    
-                <Card card={card} />
+                <Card widths="w-96" card={card} />
                ))
              ) : "Our Service is Disable Right Now!!!"
         }

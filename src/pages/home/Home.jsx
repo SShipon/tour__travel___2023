@@ -2,6 +2,7 @@ import Banner from "./banner/Banner"
 import HomeCard from "./homeCard/HomeCard"
 import HomeSlider from "./homeSlider/HomeSlider"
 import InfoSection from "./infoSection/InfoSection"
+import Review from "./review/Review"
 import Services from "./services/Services"
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
        <HomeCard />
        <HomeSlider />
        <InfoSection />
+       <Review />
     </>
   )
 }

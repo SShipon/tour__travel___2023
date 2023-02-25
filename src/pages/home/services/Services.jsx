@@ -1,7 +1,7 @@
-import ServicesCard from "../../../components/shared/seviceCard/ServicesCard"
 import service1 from "../../../assets/images/b1.png"
 import service2 from "../../../assets/images/b2.png"
 import service3 from "../../../assets/images/b3.png"
+import ServicesCard from "../../../components/shared/seviceCard/ServicesCard"
 import { TextHeader } from "../../../components/UI/titleText/Text"
 
 const Services = () => {

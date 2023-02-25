@@ -4,7 +4,7 @@ export const TextHeader = ({textHeader}) => {
   
   return (
     <>
-      <article className="text-center mt-24">
+      <article className="text-center mt-4">
          <span className="text-2xl font-bold font-serif text-orange-500">{textHeader}</span>
       </article>
     </>

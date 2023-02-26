@@ -28,7 +28,7 @@
   }
 
   .footer-support{
-    @apply transition duration-300 hover:-translate-y-1 delay-200 ease-in-out mt-2 flex flex-col pl-10 text-lg font-semibold
+    @apply transition duration-300 hover:-translate-y-1 delay-200 ease-in-out mt-3 flex flex-col pl-10 text-base font-semibold
   }
 
   /* review section */
@@ -77,6 +77,20 @@
   padding-bottom: 20px;
   margin-top: -100px;
   z-index: -1;
+}
+.footerContact{
+  display: flex;
+  align-items:center;
+  padding-left: 40px;
+  color: white;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.footerIcon{
+  color: #ff7f47;
+  font-size: 16px;
+  margin-top: 7px;
+  margin-right: 10px;
 }
 
 }

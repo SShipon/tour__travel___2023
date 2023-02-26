@@ -6,6 +6,7 @@ import payment2 from "../../../assets/payment/download (1).png"
 import payment3 from "../../../assets/payment/download (2).png"
 import payment4 from "../../../assets/payment/download (3).png"
 import payment5 from "../../../assets/payment/download (4).png"
+import logo from "../../../assets/icon/luxury4.png"
 import { TextHeader } from "../../UI/titleText/Text"
 
 
@@ -44,11 +45,41 @@ const FooterPage = () => {
         <div className='footer-bg'>  
             <div className="grid grid-cols-4 w-10/12 gap-4 mx-auto">
                 <div className='border-2 w-72 text-white item-center'>
-                  <p className='text-center'></p>
+                  <img className="h-20" src={logo} alt="" />
+                  <p className="mt-4 ">Lorem ipsum dolor sit amet conse ctetur, 
+                    adipisicing elit. Ipsum harum doloribus animi!
+                  </p>
+                  <div className="mt-3">
+                   <span className="text-2xl font-bold font-serif text-orange-500">Follow Us:</span>
+                  </div>
                 </div>
 
-                <div className='border-2 w-64 text-white item-center'>
-                  <p className='text-center'>Section 2</p>
+                <div className='border-2 w-60 text-white item-center'>
+                <TextHeader textHeader="Contact Us" />
+
+                     <div className='footerContact '>
+                        <p><FaPhoneVolume className='footerIcon '></FaPhoneVolume></p>
+                           <Link className="flex flex-col" to="#">
+                            <p>+8801955555441</p>
+                            <p>+8801987554445</p>
+                           </Link>
+                     </div>
+
+                     <div className='footerContact '>
+                       <p><FaSms className='footerIcon '></FaSms> </p>
+                          <Link to="#">                          
+                          luxury@gmail.com <br />
+                          support@luxury.com
+                          </Link>
+                     </div>
+
+                     <div className='footerContact'>
+                        <p><FaLocationArrow className='footerIcon'></FaLocationArrow> </p>
+                           <Link to="#">                             
+                                2752 Willison Street <br />
+                                Eagan, United State.
+                           </Link>
+                     </div>
                 </div>
 
                 <div className='border-2 w-48 text-white item-center'>
@@ -59,7 +90,7 @@ const FooterPage = () => {
                 </div>
 
                 <div className='border-2 w-64'>
-                  <TextHeader textHeader="We Accept:" />
+                  <TextHeader textHeader="We Accept" />
                   {/* <p className='text-center text-white font-serif mt-5 text-2xl'>We Accept:</p> */}
                   <div className="grid grid-cols-2 gap-y-4 justify-items-center mt-6 ">
                     {payments?.map((payment)=> <img src={ payment } alt="" />)}
@@ -70,7 +101,7 @@ const FooterPage = () => {
                <div className='w-10/12 mx-auto mt-8'>
                   <hr className="text-white" />
                   <div className="w-[450px] mx-auto ">
-                   <small className='text-white'> Copyright&copy; 2022 Luxury - Travel & Tours| Developed By Nozibul Islam</small>
+                   <small className='text-white'> Copyright&copy; 2022 Luxury - Travel & Tours | Developed By Nozibul Islam</small>
                   </div>
               </div>
         </div>

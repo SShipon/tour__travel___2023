@@ -10,7 +10,7 @@ import img4 from '../../../assets/team/team1.jpg';
 
 
 const Review = () => {
-    let textTitle = `What Oue Traveler Say\n About Us` ;
+    let textTitle = `What Our Traveler Say\n About Us` ;
 
     const reviews = [
         {

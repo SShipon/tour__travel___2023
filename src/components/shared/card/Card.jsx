@@ -1,7 +1,6 @@
 
 import { useState } from 'react';
-import AddButton from '../../UI/buttons/AddButton';
-import DetailButton from '../../UI/buttons/DetailButton';
+import CardButton from '../../UI/buttons/CardButton';
 import { Title } from '../../UI/titleText/Text';
 import CardHeader from './cardHeader/CardHeader';
 import ImgUi from './imgUi/ImgUi';
@@ -9,7 +8,7 @@ import ImgUi from './imgUi/ImgUi';
 
 const Card = ({card, widths, heights}) => {
   const {img, title} = card || {} ;
-  console.log(widths);
+  
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -22,9 +21,8 @@ const Card = ({card, widths, heights}) => {
   };
 
 
-
   return (
-     <div className={ `${widths} shadow-xl rounded-xl bg-[#f0ece7] `} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+     <div className={`${widths} shadow-xl rounded-xl bg-[#f0ece7]`} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
         <ImgUi heights={heights} img={img} isHovered={isHovered} alt="card Img"/>
         <div className="card-body">
           <div className='flex justify-between'>
@@ -35,8 +33,8 @@ const Card = ({card, widths, heights}) => {
             <Title cardTitle={title} />
           </div>
           <div className="flex justify-between">
-             <AddButton addCard="Add Card"/> 
-             <DetailButton info="More Info"/>
+             <CardButton card="Add Card" />
+             <CardButton card="More Info" bg />
           </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-import { FaFacebook,FaTwitter,FaPhoneVolume,FaLinkedinIn,FaSms,FaLocationArrow } from "react-icons/fa";
+import { FaPhoneVolume, FaSms, FaLocationArrow } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 import payment1 from "../../../assets/payment/download.png"
@@ -8,6 +8,7 @@ import payment4 from "../../../assets/payment/download (3).png"
 import payment5 from "../../../assets/payment/download (4).png"
 import logo from "../../../assets/icon/luxury4.png"
 import { TextHeader } from "../../UI/titleText/Text"
+import SocialIcon from "../../UI/icons/SocialIcon";
 
 
 const FooterPage = () => {
@@ -20,7 +21,7 @@ const FooterPage = () => {
 
                },
                {
-                pages:"Guide", 
+                pages:"Our Guide", 
                 link: "/guide"
 
                },
@@ -44,17 +45,27 @@ const FooterPage = () => {
     return (
         <div className='footer-bg'>  
             <div className="grid grid-cols-4 w-10/12 gap-4 mx-auto">
-                <div className='border-2 w-72 text-white item-center'>
+                <div className='w-72 text-white item-center'>
                   <img className="h-20" src={logo} alt="" />
                   <p className="mt-4 ">Lorem ipsum dolor sit amet conse ctetur, 
                     adipisicing elit. Ipsum harum doloribus animi!
                   </p>
-                  <div className="mt-3">
+                  <div className="mt-5">
                    <span className="text-2xl font-bold font-serif text-orange-500">Follow Us:</span>
+                   <div>
+                    <SocialIcon />
+                   </div>
                   </div>
                 </div>
 
-                <div className='border-2 w-60 text-white item-center'>
+                <div className='w-60 text-white  '>
+                  <TextHeader textHeader="Support" />
+                   <div className="mt-6 ml-10">
+                    { supports?.map((support)=><Link className='footer-support hover:-translate-y-1 icon-hover' to={support.link}>{support.pages}</Link>)}
+                   </div>
+                </div>
+
+                <div className='w-60 text-white item-center'>
                 <TextHeader textHeader="Contact Us" />
 
                      <div className='footerContact '>
@@ -82,14 +93,7 @@ const FooterPage = () => {
                      </div>
                 </div>
 
-                <div className='border-2 w-48 text-white item-center'>
-                  <TextHeader textHeader="Support" />
-                   <div className="mt-6">
-                    {supports?.map((support)=><Link className='footer-support' to={support.link}>{support.pages}</Link>)}
-                   </div>
-                </div>
-
-                <div className='border-2 w-64'>
+                <div className='w-64'>
                   <TextHeader textHeader="We Accept" />
                   {/* <p className='text-center text-white font-serif mt-5 text-2xl'>We Accept:</p> */}
                   <div className="grid grid-cols-2 gap-y-4 justify-items-center mt-6 ">

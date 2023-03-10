@@ -1,44 +1,93 @@
-import { Link } from 'react-router-dom';
-// import logo1 from "../../../assets/icon/luxury4.png"
+import { useState , useEffect} from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import logo1 from "../../../assets/icon/luxury4.png"
 import logo2 from "../../../assets/icon/luxaryWhite.jpg"
-// import { useEffect, useState } from 'react';
 
 
-const Navbar = () => {
-    //  const [navLogo, setNavLogo] = useState([logo2]);
-    //  const [navBg, setNavBg] = useState(false);
-    //  const [navMenu, setNavMenu] = useState(false);
 
-     const menuItem= <>
-       <li><Link  to="/">Home</Link></li>
-       <li><Link  to="/">Destination</Link></li>
-       <li><Link  to="/">Tour Package</Link></li>
+
+const Navbar = ({title}) => {
+     const [navLogo, setNavLogo] = useState([logo2]);
+     const [navBg, setNavBg] = useState(false);
+     const [navMenu, setNavMenu] = useState(false);
+
+    // Decide What to render
+    // let navMenus = navMenu ? "menu-itemScroll" : "menu-item"
+    let activeClass= "text-[#082a74] border-b-2 border-purple-500 font-bold"
+    
+  // const [show, setShow] = useState(false);
+  // const showDropdown = (e)=>{
+  //     setShow(!show);
+  // }
+  // const hideDropdown = e => {
+  //     setShow(false);
+  // }
+
+  // const onScroll=()=>{
+  //   if(window.scrollY>=80){
+  //     setNavLogo([logo1])
+  //     setNavBg(true)
+  //     setNavMenu(true)
+  //   }
+  //   else{
+  //    setNavLogo([logo2])
+  //    setNavBg(false)
+  //    setNavMenu(false)
+  //   }
+  // }
+  //   useEffect(()=>{
+  //    window.addEventListener('scroll', onScroll)
+  //     return ()=>{
+  //      window.addEventListener('scroll', onScroll)
+ 
+  //     }
+  //   }, [])
+
+
+    // const ActiveLink =(props)=>{
+    //   return <NavLink
+    //            style={({isActive})=>{
+    //             return {
+    //               color: isActive ? "#082a74" : "" ,
+    //               borderBottom: isActive ? "2px solid #082a74" : "",
+    //               fontWeight: isActive ? "bold" : "",
+    //             }
+    //           }}   
+    //           {...props} 
+    //       />;
+    //    }
+
+    const menuItem= <>
+       <li><NavLink  className={({isActive})=> isActive ? activeClass : "" } to="/">Home</NavLink></li>
+       <li><NavLink  className={({isActive})=> isActive ? activeClass : "" } to="/">Destination</NavLink></li>
+       <li><NavLink  className={`menu-item bg-transparent`} to="/">Tour Package</NavLink></li>
        <li className="group">
-          <span>
+          <span className={`menu-item `}>
             Pages
             <svg className="dropdown-pages" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
           </span>
           <ul className="rounded-box bg-base-100 p-2">
-          <li><Link  to="/">Gallery Page</Link></li>
-          <li><Link  to="/">Guide Page</Link></li>
-          <li><Link  to="/">Destination Page</Link></li>
-          <li><Link  to="/">FAQ Page</Link></li>
+          <li><Link to="/">Gallery Page</Link></li>
+          <li><Link to="/">Guide Page</Link></li>
+          <li><Link to="/">Destination Page</Link></li>
+          <li><Link to="/">FAQ Page</Link></li>
           </ul>
        </li>
-       <li><Link to="/">About</Link></li>
-       <li><Link to="/">Contact</Link></li>
-    </>;
-
+       <li><NavLink className={`menu-item bg-transparent `} to="/">About</NavLink></li>
+       <li><NavLink className={`menu-item bg-transparent `} to="/contact">Contact</NavLink></li>
+    </>;     
+{/*  ${navBg ? "nav-bgScroll" : "nav-bg"} */}
   return (
    <>
-     <div className="navbar bg-white ">
+    <title>{title} - Luxury</title>
+     <div className={`navbar sticky bg-slate-500 `}>
 
-       <div className="navbar-start mx-20">
+      <div className="navbar-start mx-20">
       <div className="dropdown">
        <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
        </label>
-       <ul tabIndex={0} className="menu-item">
+       <ul tabIndex={0} className="menu-items">
         {menuItem}
        </ul>
       </div>
@@ -47,8 +96,7 @@ const Navbar = () => {
         </Link>
        </div>
 
-
-       <div className=" navbar-center">
+      <div className="navbar-center">
       <div className="dropdown">
        <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>

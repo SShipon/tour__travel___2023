@@ -1,15 +1,16 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import ButtonUi from '../../UI/buttons/ButtonUi';
 import CardButton from '../../UI/buttons/CardButton';
 import { Title } from '../../UI/titleText/Text';
 import CardHeader from './cardHeader/CardHeader';
 import ImgUi from './imgUi/ImgUi';
 
 
-const Card = ({card, widths, heights}) => {
+const Card = ({card, widths, heights, blog}) => {
   const {img, title} = card || {} ;
   
-
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -20,9 +21,12 @@ const Card = ({card, widths, heights}) => {
     setIsHovered(false);
   };
 
+  // Decide hat to render
+  let btn = blog ? "justify-center" : "justify-between"
+  
 
   return (
-     <div className={`${widths} shadow-xl rounded-xl bg-[#f0ece7]`} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+     <div className={`${widths} shadow-xl rounded-xl bg-[#f7f5f3dc]`} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
         <ImgUi heights={heights} img={img} isHovered={isHovered} alt="card Img"/>
         <div className="card-body">
           <div className='flex justify-between'>
@@ -32,9 +36,14 @@ const Card = ({card, widths, heights}) => {
           <div>
             <Title cardTitle={title} />
           </div>
-          <div className="flex justify-between">
-             <CardButton card="Add Card" />
-             <CardButton card="More Info" bg />
+          <div className={`flex ${btn}`}>
+            {
+              blog ? <Link to="/"><ButtonUi text ="MORE INFO"/></Link> : <>
+              <CardButton card="Add Card" bg />
+              <CardButton card="More Info" /> 
+              </>
+            }
+             
           </div>
         </div>
     </div>

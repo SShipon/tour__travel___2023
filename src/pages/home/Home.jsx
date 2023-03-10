@@ -1,4 +1,5 @@
 import Banner from "./banner/Banner"
+import HomeBlog from "./homeBlog/HomeBlog"
 import HomeCard from "./homeCard/HomeCard"
 import HomeSlider from "./homeSlider/HomeSlider"
 import InfoSection from "./infoSection/InfoSection"
@@ -14,6 +15,7 @@ const Home = () => {
        <HomeSlider />
        <InfoSection />
        <Review />
+       <HomeBlog />
     </>
   )
 }

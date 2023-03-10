@@ -7,7 +7,7 @@ import Navbar from '../components/shared/navbar/Navbar'
 const Main = () => {
   return (
     <>
-      <Navbar />
+      <Navbar title="Home" />
       <Outlet />
       <Footer />
       

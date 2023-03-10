@@ -45,7 +45,8 @@ const FooterPage = () => {
     return (
         <div className='footer-bg'>  
             <div className="grid grid-cols-4 w-10/12 gap-4 mx-auto">
-                <div className='w-72 text-white item-center'>
+              
+                <div className='w-64 mt-24 text-white item-center'>
                   <img className="h-20" src={logo} alt="" />
                   <p className="mt-4 ">Lorem ipsum dolor sit amet conse ctetur, 
                     adipisicing elit. Ipsum harum doloribus animi!

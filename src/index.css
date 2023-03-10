@@ -6,8 +6,8 @@
 
 @layer components {
   /* group utilities */
-  .menu-item{
-    @apply menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52
+  .menu-items{
+    @apply dropdown-content mt-3 p-2  w-52
   }
   .dropdown-pages{
     @apply fill-current group-hover:rotate-180 transition-transform duration-700
@@ -42,6 +42,58 @@
             hover:bg-orange-700
             hover:text-white
   }
+  
+
+  /* Navbar */
+/* .nav-bgScroll{
+    background-color: white !important;
+    transition:background-color 400ms linear;
+    -webkit-transition:background-color 400ms linear;
+    -o-transition:background-color 400ms linear;
+    -moz-transition:background-color 400ms linear;
+ } */
+/*  .nav-bg{
+  background-color: rgba(0, 0, 0, 0.0)  !important;
+  transition:background-color 400ms linear;
+  -webkit-transition:background-color 400ms linear;
+  -o-transition:background-color 400ms linear;
+  -moz-transition:background-color 400ms linear;
+
+} */
+
+ /* .active{
+  color:#082a74 ;
+  border-bottom: 2px solid #082a74;
+  font-weight: bold;
+}  */
+
+.menu-item{
+  color: white !important ;
+  text-decoration: none ;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  
+}
+/* .menu-itemScroll{
+  color: rgb(36, 13, 90) !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+} */
+
+/* .menu-item:hover{
+  color:#dfaa4f !important;
+  border-bottom: 2px solid #dfaa4f !important;
+}
+.menu-itemScroll:hover{
+  border-bottom: 2px solid #dfaa4f !important;
+  color:#dfaa4f !important;
+};   */
+
 
   /* review section */
    .slider{
@@ -87,7 +139,7 @@
   background-color: #262339;
   padding-top: 140px;
   padding-bottom: 20px;
-  margin-top: -100px;
+  /* margin-top: -100px; */
   z-index: -1;
 }
 .footerContact{

@@ -10,7 +10,7 @@
     @apply dropdown-content mt-3 p-2  w-52
   }
   .dropdown-pages{
-    @apply fill-current group-hover:rotate-180 transition-transform duration-700
+    @apply text-slate-100 mt-2 fill-current group-hover:rotate-180 transition-transform duration-700
   }
   .services-card{
   @apply w-96 mt-10 bg-[#f0ece7] hover:bg-slate-900 shadow-xl hover:-translate-y-4 duration-700
@@ -73,6 +73,7 @@
   font-weight: 500;
   font-size: 20px;
   margin-left: 10px;
+  padding-right: 2px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
   
 }

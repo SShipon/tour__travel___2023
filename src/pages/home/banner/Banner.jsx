@@ -44,8 +44,8 @@ const Banner = () => {
   // };
 
   return (
-      <section>
-        <div className='max-w-[1400px] h-[570px] w-full m-auto group'>
+      <section className=" -mt-24">
+        <div className='max-w-full h-[640px] w-full m-auto group'>
         <div
           style={{backgroundImage: `url(${bannerImg[currentIndex]})` }}
           className='w-full h-full bg-center bg-cover duration-1000'

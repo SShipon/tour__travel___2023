@@ -136,7 +136,7 @@ const Navbar = ({title})=>{
                {/* <span className='p-0 text-[20px] font-serif	 font-[500] text-white'>
                  Pages
                </span>  */}
-                <p className='dropdown-pages p-0'>{menus?.icon}</p>
+                <p className='dropdown-pages p-0 z-0 top-0'>{menus?.icon}</p>
                 
               <ul className="rounded-box bg-base-100 p-2">
                 {menus?.submenu?.map((subMenus)=>(
@@ -152,7 +152,7 @@ const Navbar = ({title})=>{
   return (
    <>
     <title>{title} - Luxury</title>
-     <div className="navbar">
+     <div className="navbar fixed top-0 z-10">
       <div className="navbar-start mx-20">
       <div className="dropdown">
        <label tabIndex={0} className="btn btn-ghost lg:hidden">

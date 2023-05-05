@@ -37,11 +37,11 @@ const Services = () => {
     ]  
 
   return (
-    <>
+    <div className="mx-10">
      <div>
         <TextHeader textHeader= "Our services"/>
      </div>
-     <div className="grid grid-cols-3 justify-items-center">
+     <div className="grid gap-6  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {
              serviceItems?.length > 0 ? (
                serviceItems?.map((serviceItem)=>(    
@@ -50,7 +50,7 @@ const Services = () => {
              ) : "Our Service is Disable Right Now!!!"
         }
      </div>
-    </>
+    </div>
   )
 }
 

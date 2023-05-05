@@ -96,7 +96,7 @@ const FooterPage = () => {
 
                 <div className='w-64'>
                   <TextHeader textHeader="We Accept" />
-                  {/* <p className='text-center text-white font-serif mt-5 text-2xl'>We Accept:</p> */}
+                 
                   <div className="grid grid-cols-2 gap-y-4 justify-items-center mt-6 ">
                     {payments?.map((payment)=> <img src={ payment } alt="" />)}
                   </div>                 
@@ -106,7 +106,7 @@ const FooterPage = () => {
                <div className='w-10/12 mx-auto mt-8'>
                   <hr className="text-white" />
                   <div className="w-[450px] mx-auto ">
-                   <small className='text-white'> Copyright&copy; 2022 Luxury - Travel & Tours | Developed By Nozibul Islam</small>
+                   <small className='text-white'> Copyright&copy; 2022 Luxury - Travel & Tours | Developed By shipon</small>
                   </div>
               </div>
         </div>

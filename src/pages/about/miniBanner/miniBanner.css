@@ -1,0 +1,55 @@
+.main___container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 50px;
+}
+.banner__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px
+}
+.banner{
+    width: 45%;
+}
+.banner img{
+    width: 1000px;
+    height: 300px;
+    border: 10px solid rgba(48,79,71,.1);
+    margin-bottom: 10px;
+}
+.banner p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #737679;
+    font-family: "Work Sans",sans-serif;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .banner__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:20px
+    }
+    .banner{
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+
+@media only screen and (min-width: 768px) {}
+
+
+@media only screen and (min-width: 992px) {}
+
+
+@media only screen and (min-width: 1200px) {}
+

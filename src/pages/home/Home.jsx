@@ -8,15 +8,15 @@ import Services from "./services/Services"
 
 const Home = () => {
   return (
-    <>
+    <div className="mx-5">
        <Banner />
        <Services />
-       <HomeCard />
+      <HomeCard />
        <HomeSlider />
        <InfoSection />
        <Review />
-       <HomeBlog />
-    </>
+       <HomeBlog /> 
+    </div>
   )
 }
 

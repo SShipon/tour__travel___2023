@@ -16,7 +16,7 @@ const Review = () => {
         {
             id:1,
             img : img1,
-            text: "Jhems Walla",
+            text: "Farzana Ahmed Nitu",
             description: `
             I am development static and dynamic websites as per your requirements,
             `

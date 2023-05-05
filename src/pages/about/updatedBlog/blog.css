@@ -1,0 +1,22 @@
+.img__container{
+    position: relative;
+}
+.date{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+
+}
+.date p{
+    background-color: #05485c;
+    width: 130px;
+    height: auto;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    margin: 0px auto;
+    padding: 3px;
+    color: #ffffff;
+}

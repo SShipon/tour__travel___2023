@@ -1,30 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-
+import './banner.css'
 
 import img1 from "../../../assets/images/b1.png"
 import img2 from "../../../assets/images/b3.png"
 import img3 from "../../../assets/images/b2.png"
+import img4 from '../../../assets/images/bg.png'
 
  const bannerImg = [ img1, img2, img3 ]
 
 
 // let slideInterval;
 const Banner = () => {
-   const [currentIndex, setCurrentIndex] = useState(0);
-
-
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? bannerImg.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === bannerImg.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
+ 
 
 
   //useEffect(()=>{
@@ -44,23 +32,41 @@ const Banner = () => {
   // };
 
   return (
-      <section className=" -mt-24">
-        <div className='max-w-full h-[640px] w-full m-auto group'>
-        <div
-          style={{backgroundImage: `url(${bannerImg[currentIndex]})` }}
-          className='w-full h-full bg-center bg-cover duration-1000'
-        ></div>
+    <div className="carousel sm:text-justify sm:h-[600px]">
+  <div id="slide1" className="carousel-item relative w-full">
+    <img src={img1} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+     
+      <a href="#slide4" className="btn btn-circle">❮</a> 
+         <div className="sm:p-10">
+         <p className="-mt-12 gtp__content"> Lorem, ipsum dolor sit amet  consectetur adipisicing elit. <br /> Cum officia dignissimos culpa animi dicta non ratione minus omnis eius maiores.</p>
+         </div>
+      <a href="#slide2" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" className="carousel-item relative w-full">
+    <img src={img2} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" className="btn btn-circle">❮</a> 
+      <a href="#slide3" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" className="carousel-item relative w-full">
+    <img src={img3} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" className="btn btn-circle">❮</a> 
+      <a href="#slide4" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" className="carousel-item relative w-full">
+    <img src={img4} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" className="btn btn-circle">❮</a> 
+      <a href="#slide1" className="btn btn-circle">❯</a>
       
-        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-          <BsChevronCompactLeft onClick={prevSlide} size={20} />
-        </div>
-      
-        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-          <BsChevronCompactRight onClick={nextSlide} size={20} />
-        </div>
-        
-        </div> 
-      </section> 
+    </div>
+  </div>
+</div>
   ) 
 }
 

@@ -26,7 +26,9 @@ const Card = ({card, widths, heights, blog}) => {
   
 
   return (
-     <div className={`${widths} shadow-xl rounded-xl bg-[#f7f5f3dc]`} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+    <section className='mx-10'>
+           <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+            <div className={`${widths} shadow-xl rounded-xl bg-[#f7f5f3dc]`} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
         <ImgUi heights={heights} img={img} isHovered={isHovered} alt="card Img"/>
         <div className="card-body">
           <div className='flex justify-between'>
@@ -47,6 +49,8 @@ const Card = ({card, widths, heights, blog}) => {
           </div>
         </div>
     </div>
+     </div>
+    </section>
   );
 };
 

@@ -15,8 +15,8 @@ const Blog = ({blog}) => {
        </div>
         <div className="card-body">
            <div className='flex justify-between'>
-           <span >{name}</span>
-           <span>{comment}</span>
+           <span ><i class="fa-solid fa-user"></i> {name}</span>
+           <span><i class="fa-solid fa-comment-lines"></i> git {comment}</span>
            </div>
         
           <p>If a dog chews shoes whose shoes does he choose?</p>

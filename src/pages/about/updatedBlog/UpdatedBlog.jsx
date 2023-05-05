@@ -36,7 +36,7 @@ const UpdatedBlog = () => {
     return (
          <div>
             <p className='text-center text-2xl font-semibold text-orange-500'>Latest Blog</p>
-            <h6 className='text-4xl font-bold text-center m-5'>Stay Updated And New <br /> Post Our Blog</h6>
+            <h6 className='sm:text-4xl font-bold text-center m-5'>Stay Updated And New <br /> Post Our Blog</h6>
               <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 mb-10 justify-items-center'>
             {
                 blogs.map(blog=><Blog

@@ -39,6 +39,10 @@
     .banner{
         width: 100%;
     }
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

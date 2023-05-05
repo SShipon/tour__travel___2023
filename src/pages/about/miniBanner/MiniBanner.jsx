@@ -10,7 +10,7 @@ const MiniBanner = () => {
             </div> 
             <div className='banner'>
                 <h6 className='text-orange-500 font-bold'>About TourX</h6>
-                <h5 className='text-5xl my-4'>The Best Travel <br /> Agency Company.</h5>
+                <h5 className='sm:text-5xl font-bold  my-4'>The Best Travel <br /> Agency Company.</h5>
                 <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia ipsum ornare, porttitor risus nec, mattis mauris. Nunc nec ornare nisi, vel elementum est. Proin malesuada venenatis ex, eu fringilla justo scelerisque sit amet. Sed fringilla nec purus non venenatis. Aliquam nec turpis pharetra, bibendum lorem in, sollicitudin nibh. Nulla sit amet lacus diam.
                 justo  
                 </p>
